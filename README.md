@@ -1,16 +1,22 @@
-CLdetection_Alg_2023 Algorithm
-CL-detection 2023 reference docker
+
+# CL-detection 2023 reference docker
+
 This docker image contains a reference implementation of RetinaNet with ResNet101 using MMdetection toolbox for the CL-detection 2023 challenge.
 
 The container will serve as a reference of how the organizer and the grand-challenge.org plattform expect the pre-defined outputs. Additionally, this reference serves as a baseline for participants to implement or propose their own algorithm for the CL-detection 2023 challenge algorithm submission.
 
-Content:
-Prerequisites
-An overview of the structure of this example
-Packing your algorithm into a docker container image
-Building your container
-Testing your container
-Generating the bundle for uploading your algorithm
+For reference, you may also want to read the blog post of grand-challenge.org on [how to create an algorithm](https://grand-challenge.org/blogs/create-an-algorithm/).
+
+## Content:
+1. [Prerequisites](#prerequisites)
+2. [An overview of the structure of this example](#overview)
+3. [Packing your algorithm into a docker container image](#todocker)
+4. [Building your container](#build)
+5. [Testing your container](#test)
+6. [Generating the bundle for uploading your algorithm](#export)
+
+
+
 1. Prerequisites
 The container is based on docker, so you need to install docker first.
 
