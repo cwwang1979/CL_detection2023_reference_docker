@@ -30,13 +30,14 @@ You also need to install evalutils package:
 pip install evalutils
 ```
 
+## 2. An overview of the structure of this example <a name="overview"></a>
 
-pip install evalutils
-2. An overview of the structure of this example
 The main inference processing is executed in the file detection.py. It loads the trained model and provides the method process_image() that takes a stacked test image using MMdetection toolbox and returns the detections as shown in figures below.
-The main file that is executed by the container is process.py. It imports the trained model and configs file using pickle. It then loads stacked image that are part of the dummy test set and processes (using the process_image() method). Before generating final output in the form of dictionary which contains all individual detected landmark in each corresponding individual image id (z-coordinate), which are ultimately stored in the file /output/orthodontic-landmarks.json.
-The output json file is a dictionary and will result as the following format:
 
+The main file that is executed by the container is process.py. It imports the trained model and configs file using pickle. It then loads stacked image that are part of the dummy test set and processes (using the process_image() method). Before generating final output in the form of dictionary which contains all individual detected landmark in each corresponding individual image id (z-coordinate), which are ultimately stored in the file /output/orthodontic-landmarks.json.
+
+The output json file is a dictionary and will result as the following format:
+```
 {   "name": "Orthodontic landmarks",
     "type": "Multiple points",
     "points": [
@@ -64,8 +65,8 @@ The output json file is a dictionary and will result as the following format:
         "major": 1,
         "minor": 0
     }
-
-Note that each point is described by the following dictionary: image
+```
+*Note that each point is described by the following dictionary: image
 
 The dictionary "name" indicates the landmark class.
 
