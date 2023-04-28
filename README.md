@@ -10,7 +10,7 @@ For reference, you may also want to read the blog post of grand-challenge.org on
 ## Content:
 1. [Prerequisites](#prerequisites)
 2. [An overview of the dictionary structure for this example](#overview)
-3. [Packing your algorithm into a docker container image](#todocker)
+3. [Implementing your algorithm into a docker container image](#todocker)
 4. [Building your container](#build)
 5. [Testing your container](#test)
 6. [Generating the bundle for uploading your algorithm](#export)
@@ -70,7 +70,7 @@ The output json file is a dictionary and will result as the following format:
 
 The dictionary "name" indicates the landmark class.
 
-## 3. Embedding your algorithm into an algorithm docker container <a name="todocker"></a>
+## 3. Implementing your algorithm into a docker container image <a name="todocker"></a>
 We recommend you to develop and adapt this docker image example to your own cephalometric landmark detection solution. You can adapt, modify or build the code from scratch.
 
 If you need a different base image to build your container (e.g., Tensorflow instead of Pytorch, or other AI toolbox), if you need additional libraries and to make sure that all source files (and weights) are copied to the docker container, you will have to adapt the Dockerfile and the requirements.txt file accordingly.
@@ -78,22 +78,25 @@ If you need a different base image to build your container (e.g., Tensorflow ins
 Please refer to the image below (Dockerfile): image
 <img width="1299" src="docs/1.png">
 
-4. Building your container
+## 4. Building your container <a name="build"></a>
 To test if all dependencies are met, you should run the file build.bat (Windows) / build.sh (Linux) to build the docker container. Please note that the next step (testing the container) also runs a build, so this step is not mandatory if you are certain that everything is set up correctly.
+<img width="1299" src="docs/2.png">
 
-5. Testing your container
+## 5. Testing your container <a name="test"></a>
 To test your container, you should run test.bat (on Windows) or test.sh (on Linux, might require sudo priviledges). This will run the test image(s) provided in the test folder through your model. It will check them against what you provide in test/expected_output.json. Be aware that this will, of course, initially not be equal to the demo detections we put there for testing our reference model.
 
-6. Generating the bundle for uploading your algorithm
+## 6. Generating the bundle for uploading your algorithm <a name="export"></a>
 Finally, you need to run the export.sh (Linux) or export.bat script to package your docker image. This step creates a file with the extension "tar.gz", which you can then upload to grand-challenge to submit your algorithm.
 
-7. Creating an "Algorithm" as your solution to the CL-detection 2023 Challenge
+
+## 7. Creating an "Algorithm" as your solution to the CL-detection 2023 Challenge
+
 In order to submit your docker container, you first have to add an Algorithm entry for your docker container here.
-
+<img width="1299" src="docs/5.png">
 Please enter a name for the algorithm:
+<img width="1299" src="docs/3.png">
 Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog:
-
-image
+<img width="1299" src="docs/4.png">
 
 Finally, you can submit your docker container to CL-detection 2023: image
 
