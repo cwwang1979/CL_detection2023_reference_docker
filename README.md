@@ -1,5 +1,4 @@
-# CLdetection_Alg_2023 Algorithm
-
+CLdetection_Alg_2023 Algorithm
 CL-detection 2023 reference docker
 This docker image contains a reference implementation of RetinaNet with ResNet101 using MMdetection toolbox for the CL-detection 2023 challenge.
 
