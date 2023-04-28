@@ -1,6 +1,92 @@
 # CLdetection_Alg_2023 Algorithm
 
-The source code for the algorithm container for
-CLdetection_Alg_2023, generated with
-evalutils version 0.4.0
-using Python 3.9.
+CL-detection 2023 reference docker
+This docker image contains a reference implementation of RetinaNet with ResNet101 using MMdetection toolbox for the CL-detection 2023 challenge.
+
+The container will serve as a reference of how the organizer and the grand-challenge.org plattform expect the pre-defined outputs. Additionally, this reference serves as a baseline for participants to implement or propose their own algorithm for the CL-detection 2023 challenge algorithm submission.
+
+Content:
+Prerequisites
+An overview of the structure of this example
+Packing your algorithm into a docker container image
+Building your container
+Testing your container
+Generating the bundle for uploading your algorithm
+1. Prerequisites
+The container is based on docker, so you need to install docker first.
+
+Second, you need to clone this repository:
+
+git clone https://github.com/cwwang1979/CL_detection2023_reference_docker
+You will also need evalutils (provided by grand-challenge):
+
+pip install evalutils
+2. An overview of the structure of this example
+The main inference processing is executed in the file detection.py. It loads the trained model and provides the method process_image() that takes a stacked test image using MMdetection toolbox and returns the detections as shown in figures below.
+The main file that is executed by the container is process.py. It imports the trained model and configs file using pickle. It then loads stacked image that are part of the dummy test set and processes (using the process_image() method). Before generating final output in the form of dictionary which contains all individual detected landmark in each corresponding individual image id (z-coordinate), which are ultimately stored in the file /output/orthodontic-landmarks.json.
+The output json file is a dictionary and will result as the following format:
+
+{   "name": "Orthodontic landmarks",
+    "type": "Multiple points",
+    "points": [
+        {
+            "name": "1",
+            "point": [
+                1916,
+                1489,
+                1
+            ],
+        },
+	.
+	.
+	.
+        {
+            "name": "38",
+            "point": [
+                1916,
+                1489,
+                2
+            ],
+        }
+    ],
+    "version": {
+        "major": 1,
+        "minor": 0
+    }
+
+Note that each point is described by the following dictionary: image
+
+The dictionary "name" indicates the landmark class.
+
+3. Embedding your algorithm into an algorithm docker container
+We encourage you to adapt and develop this example to your own cephalometric landmark detection solution. You can adapt, modify or build the code from scratch.
+
+If you need a different base image to build your container (e.g., Tensorflow instead of Pytorch, or other AI toolbox), if you need additional libraries and to make sure that all source files (and weights) are copied to the docker container, you will have to adapt the Dockerfile and the requirements.txt file accordingly.
+
+Please refer to the image below (Dockerfile): image
+
+4. Building your container
+To test if all dependencies are met, you should run the file build.bat (Windows) / build.sh (Linux) to build the docker container. Please note that the next step (testing the container) also runs a build, so this step is not mandatory if you are certain that everything is set up correctly.
+
+5. Testing your container
+To test your container, you should run test.bat (on Windows) or test.sh (on Linux, might require sudo priviledges). This will run the test image(s) provided in the test folder through your model. It will check them against what you provide in test/expected_output.json. Be aware that this will, of course, initially not be equal to the demo detections we put there for testing our reference model.
+
+6. Generating the bundle for uploading your algorithm
+Finally, you need to run the export.sh (Linux) or export.bat script to package your docker image. This step creates a file with the extension "tar.gz", which you can then upload to grand-challenge to submit your algorithm.
+
+7. Creating an "Algorithm" as your solution to the CL-detection 2023 Challenge
+In order to submit your docker container, you first have to add an Algorithm entry for your docker container here.
+
+Please enter a name for the algorithm:
+Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog:
+
+image
+
+Finally, you can submit your docker container to CL-detection 2023: image
+
+License
+CC BY-NC 4.0
+
+Contact Information
+Prof. Ching-Wei Wang : cweiwang@mail.ntust.edu.tw ; cwwang1979@gmail.com
+Mr. Hikam Muzakky : m11123801@mail.ntust.edu.tw
