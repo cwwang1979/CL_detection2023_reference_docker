@@ -92,13 +92,14 @@ Finally, you need to run the export.sh (Linux) or export.bat script to package y
 ## 7. Creating an "Algorithm" as your solution to the CL-detection 2023 Challenge
 
 In order to submit your docker container, you first have to add an Algorithm entry for your docker container here.
-<img width="1299" src="docs/5.png">
+
 Please enter a name for the algorithm:
 <img width="1299" src="docs/3.png">
 Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog:
 <img width="1299" src="docs/4.png">
 
-Finally, you can submit your docker container to CL-detection 2023: image
+Finally, you can submit your docker container to CL-detection 2023: 
+<img width="1299" src="docs/5.png">
 
 License
 CC BY-NC 4.0
