@@ -9,7 +9,7 @@ For reference, you may also want to read the blog post of grand-challenge.org on
 
 ## Content:
 1. [Prerequisites](#prerequisites)
-2. [An overview of the structure of this example](#overview)
+2. [An overview of the dictionary structure for this example](#overview)
 3. [Packing your algorithm into a docker container image](#todocker)
 4. [Building your container](#build)
 5. [Testing your container](#test)
@@ -30,7 +30,7 @@ You also need to install evalutils package:
 pip install evalutils
 ```
 
-## 2. An overview of the structure of this example <a name="overview"></a>
+## 2. An overview of the dictionary structure for this example <a name="overview"></a>
 
 The main inference processing is executed in the file detection.py. It loads the trained model and provides the method process_image() that takes a stacked test image using MMdetection toolbox and returns the detections as shown in figures below.
 
