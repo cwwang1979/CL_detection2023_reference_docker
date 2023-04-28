@@ -16,14 +16,20 @@ For reference, you may also want to read the blog post of grand-challenge.org on
 6. [Generating the bundle for uploading your algorithm](#export)
 
 
+## 1. Prerequisites <a name="prerequisites"></a>
 
-1. Prerequisites
-The container is based on docker, so you need to install docker first.
+The container is based on docker, please [install docker here](https://www.docker.com/get-started). 
 
-Second, you need to clone this repository:
-
+Second, you need to clone CL_detection2023_reference_docker repository:
+```
 git clone https://github.com/cwwang1979/CL_detection2023_reference_docker
-You will also need evalutils (provided by grand-challenge):
+```
+
+You also need to install evalutils package:
+```
+pip install evalutils
+```
+
 
 pip install evalutils
 2. An overview of the structure of this example
