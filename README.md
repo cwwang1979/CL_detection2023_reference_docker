@@ -105,5 +105,5 @@ Finally, you can submit your docker container to CL-detection 2023:
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Contact Information
-Prof. Ching-Wei Wang : cweiwang@mail.ntust.edu.tw ; cwwang1979@gmail.com
-Mr. Hikam Muzakky : m11123801@mail.ntust.edu.tw
+-Prof. Ching-Wei Wang : cweiwang@mail.ntust.edu.tw ; cwwang1979@gmail.com
+-Mr. Hikam Muzakky : m11123801@mail.ntust.edu.tw
