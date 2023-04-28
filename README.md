@@ -96,10 +96,9 @@ In order to submit your docker container, you first have to add an Algorithm ent
 Please enter a name for the algorithm:
 <img width="1299" src="docs/3.png">
 Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog:
-<img width="1299" src="docs/4.png">
-
-Finally, you can submit your docker container to CL-detection 2023: 
 <img width="1299" src="docs/5.png">
+Finally, you can submit your docker container to CL-detection 2023: 
+<img width="1299" src="docs/4.png">
 
 License
 CC BY-NC 4.0
