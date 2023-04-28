@@ -100,9 +100,10 @@ Please note that it can take a while (several minutes) until the container becom
 Finally, you can submit your docker container to CL-detection 2023: 
 <img width="1299" src="docs/4.png">
 
-License
-CC BY-NC 4.0
 
-Contact Information
+## License
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
+
+## Contact Information
 Prof. Ching-Wei Wang : cweiwang@mail.ntust.edu.tw ; cwwang1979@gmail.com
 Mr. Hikam Muzakky : m11123801@mail.ntust.edu.tw
