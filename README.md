@@ -101,6 +101,8 @@ Please note that it can take a while (several minutes) until the container becom
 Before submit your algorithm, we highly recommend participants to try out their algorithm with small stack image (stack1.mha) which available on [stack1.mha](test/stack1.mha).
 <img width="1299" src="docs/6.png">
 
+And make sure your algorithm output has the same format with our pre-defined output.
+<img width="1299" src="docs/7.png">
 
 Finally, you can submit your docker container to CL-detection 2023: 
 <img width="1299" src="docs/4.png">
