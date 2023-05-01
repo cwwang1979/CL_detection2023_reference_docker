@@ -97,6 +97,11 @@ Please enter a name for the algorithm:
 <img width="1299" src="docs/3.png">
 Please note that it can take a while (several minutes) until the container becomes active. You can determine which one is active in the same dialog:
 <img width="1299" src="docs/5.png">
+
+Before submit your algorithm, we highly recommend participants to try out their algorithm with small stack image (stack1.mha) which available on [stack1.mha](test/stack1.mha).
+<img width="1299" src="docs/6.png">
+
+
 Finally, you can submit your docker container to CL-detection 2023: 
 <img width="1299" src="docs/4.png">
 
