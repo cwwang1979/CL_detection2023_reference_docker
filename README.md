@@ -1,7 +1,7 @@
 
 # CL-detection 2023 reference docker
 
-This docker image contains a reference implementation of RetinaNet with ResNet101 using MMdetection toolbox for the CL-detection 2023 challenge.
+This docker image contains a reference implementation of RetinaNet with ResNet101 using MMdetection toolbox for the CL-detection 2023 challenge which has been trained for 100 epochs.
 
 The container will serve as a reference of how the organizer and the grand-challenge.org plattform expect the pre-defined outputs. Additionally, this reference serves as a baseline for participants to implement or propose their own algorithm for the CL-detection 2023 challenge algorithm submission.
 
