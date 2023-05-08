@@ -104,9 +104,14 @@ Before submit your algorithm, we highly recommend participants to try out their 
 And make sure your algorithm output has the same format with our pre-defined output.
 <img width="1299" src="docs/7.png">
 
-Finally, you can submit your docker container to CL-detection 2023: 
+Finally, you can submit your docker container to CL-detection 2023:
+1. Deadline for validation submission: July 1, 2023 (00.00 TWT)
 <img width="1299" src="docs/4.png">
 
+2. Deadline for testing submission: August 15, 2023 (00.00 TWT)
+<img width="1299" src="docs/8.png">
+
+*Deadline for paper submission* in the LNCS Springer format (with 4 pages) : September 15, 2023
 
 ## License
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
