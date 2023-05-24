@@ -111,7 +111,8 @@ Finally, you can submit your docker container to CL-detection 2023:
 2. Deadline for testing submission: August 15, 2023 (00.00 TWT)
 <img width="1299" src="docs/8.png">
 
-*Deadline for paper submission* in the LNCS Springer format (with 4 pages) : September 15, 2023
+*For testing phase submission, participants are mandatory to submit their first draft of the paper submission* in the LNCS Springer format (with 4 pages).
+*Deadline for final paper submission* in the LNCS Springer format (with 4 pages): September 15, 2023 (Participants are able to send the final revised paper until September 15, 2023, to Prof Wang (cweiwang@mail.ntust.edu.tw; cwwang1979@gmail.com) and Mr. Hikam Muzakky (m11123801@mail.ntust.edu.tw))
 
 ## License
 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)
